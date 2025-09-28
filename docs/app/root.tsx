@@ -14,7 +14,10 @@ import {
   useLoaderData,
 } from '@remix-run/react'
 import { Analytics } from '@vercel/analytics/react'
-import { WidgetPlausible } from './components/Widgets/WidgetPlausible'
+import {
+  WidgetGoogleTagManagerHead,
+  WidgetGoogleTagManagerBody,
+} from './components/Widgets/WidgetGoogleTagManager'
 import { lightThemeClass } from './styles/light-theme.css'
 import global from './styles/global.css?url'
 import docusearch from '@docsearch/css/dist/style.css?url'
@@ -111,9 +114,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
-        <WidgetPlausible />
+        <WidgetGoogleTagManagerHead />
       </head>
       <body className={theme === 'light' ? lightThemeClass : darkThemeClass}>
+        <WidgetGoogleTagManagerBody />
         {children}
         <SiteFooter />
         <script
