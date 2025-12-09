@@ -4,7 +4,7 @@
  </sup>
 </h2>
 
-<a href="http://go.warp.dev/awesome-cursorrules">
+<a href="http://go.warp.dev/react-spring">
   <p align="center">
     <img src="https://github.com/warpdotdev/brand-assets/blob/main/Github/Sponsor/Warp-Github-LG-02.png?raw=true" width="320" />
   </p>
